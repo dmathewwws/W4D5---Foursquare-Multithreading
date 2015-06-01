@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1CD5C11B1832C2007D66C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1CD5C01B1832C2007D66C5 /* CoreLocation.framework */; };
 		AFB357F21B1831CD0093289D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB357F11B1831CD0093289D /* main.m */; };
 		AFB357F51B1831CD0093289D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB357F41B1831CD0093289D /* AppDelegate.m */; };
 		AFB357F81B1831CD0093289D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB357F71B1831CD0093289D /* MasterViewController.m */; };
@@ -15,6 +16,7 @@
 		AFB358001B1831CD0093289D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB357FF1B1831CD0093289D /* Images.xcassets */; };
 		AFB358031B1831CD0093289D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB358011B1831CD0093289D /* LaunchScreen.xib */; };
 		AFB3580F1B1831CD0093289D /* W4D5_FoursquareGCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB3580E1B1831CD0093289D /* W4D5_FoursquareGCDTests.m */; };
+		AFB3581A1B1831EA0093289D /* FoursquareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB358191B1831EA0093289D /* FoursquareManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF1CD5C01B1832C2007D66C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AFB357EC1B1831CD0093289D /* W4D5-FoursquareGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W4D5-FoursquareGCD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB357F01B1831CD0093289D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB357F11B1831CD0093289D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +46,8 @@
 		AFB358081B1831CD0093289D /* W4D5-FoursquareGCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W4D5-FoursquareGCDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB3580D1B1831CD0093289D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB3580E1B1831CD0093289D /* W4D5_FoursquareGCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = W4D5_FoursquareGCDTests.m; sourceTree = "<group>"; };
+		AFB358181B1831EA0093289D /* FoursquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareManager.h; sourceTree = "<group>"; };
+		AFB358191B1831EA0093289D /* FoursquareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1CD5C11B1832C2007D66C5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 		AFB357E31B1831CD0093289D = {
 			isa = PBXGroup;
 			children = (
+				AF1CD5C01B1832C2007D66C5 /* CoreLocation.framework */,
 				AFB357EE1B1831CD0093289D /* W4D5-FoursquareGCD */,
 				AFB3580B1B1831CD0093289D /* W4D5-FoursquareGCDTests */,
 				AFB357ED1B1831CD0093289D /* Products */,
@@ -90,6 +97,8 @@
 				AFB357F71B1831CD0093289D /* MasterViewController.m */,
 				AFB357F91B1831CD0093289D /* DetailViewController.h */,
 				AFB357FA1B1831CD0093289D /* DetailViewController.m */,
+				AFB358181B1831EA0093289D /* FoursquareManager.h */,
+				AFB358191B1831EA0093289D /* FoursquareManager.m */,
 				AFB357FC1B1831CD0093289D /* Main.storyboard */,
 				AFB357FF1B1831CD0093289D /* Images.xcassets */,
 				AFB358011B1831CD0093289D /* LaunchScreen.xib */,
@@ -225,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB357F51B1831CD0093289D /* AppDelegate.m in Sources */,
+				AFB3581A1B1831EA0093289D /* FoursquareManager.m in Sources */,
 				AFB357F81B1831CD0093289D /* MasterViewController.m in Sources */,
 				AFB357F21B1831CD0093289D /* main.m in Sources */,
 				AFB357FB1B1831CD0093289D /* DetailViewController.m in Sources */,
@@ -422,6 +432,7 @@
 				AFB358141B1831CD0093289D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFB358151B1831CD0093289D /* Build configuration list for PBXNativeTarget "W4D5-FoursquareGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				AFB358171B1831CD0093289D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
